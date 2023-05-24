@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.admin-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.admin-nav-bar{
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    border-radius: 5px;
+    width: 25%;
+    min-height: 95vh;
+}
+
+.admin-nav-icon{
+    /* color: red; */
+    font-size: 1.5rem;
+    position: absolute;
+    top: 0px;
+    left: 3px;
+    transition: 0.2s ease-in-out;
+}
+
+.admin-icon{
+    font-size: 1.5rem;
+    position: absolute;
+    transform: translate(-5px, -5px);
+}
+
+.admin-nav-wrapper h2{
+    padding-left: 2rem;
+    font-size: 1.1rem;
+    cursor: pointer ;
+}
+
+.admin-nav-wrapper button{
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: sans-serif;
+    cursor: pointer;
+    padding-left: 2rem;
+}
+
+.admin-main-section{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    width: 70%;
+    height: 95vh;
+    overflow-y: scroll;
+    /* border: 1px solid red; */
+    border-radius: 5px;
+}
+
+.admin-main-heading h3, .admin-order-container h3, .admin-product-container h3{
+    font-size: 1.1rem;
+    font-family: sans-serif;
+}
+
+.admin-total-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.total-container{
+    width: 30%;
+    min-height: 10vh;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 0.6rem 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.total-container:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+.admin-circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.dollar{
+    background-color: #F59520;
+}
+
+.cart{
+    background-color: #2BC46C;
+}
+
+.products{
+    background-color: #1479F4;
+}
+
+.admin-circle-icon{
+    font-size: 1.3rem;
+    margin: 9px;
+    color: #fff;
+}
+
+.chart-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.chart-wrapper-bar{
+    width: 60%;
+    height: 50vh;
+}
+
+.chart-wrapper-pie{
+    width: 37%;
+    height: 35vh;
+    padding-left: 3rem;
+}
+
+.chart-wrapper-pie h5{
+    text-align: center;
+    padding-top: 3rem;
+}
+.chart-wrapper-bar h5{
+    text-align: center;
+    padding-top: 0.8rem;
+}
+
+.total-container-content{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    width: 75%;
+    margin-top: 0.2rem;
+}
+
+.total-container-content span{
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-family: sans-serif;
+    opacity: 0.4;
+}
+
+.total-container-content h4{
+    font-size: 0.9rem;
+    font-family: sans-serif;
+}
+
+.admin-order-table{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.admin-order-table span{
+    font-size: 0.9rem;
+    font-family: sans-serif;
+}
+
+.admin-statistic-container{
+    width: 100%;
+    min-height: 55vh;
+}
+
+.table-container{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0rem;
+}
+
+.table-container tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+
+.table-container tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.table-container td{
+    padding-top: 1rem;
+    font-size: 0.9rem;
+    font-family: sans-serif;
+}
+
+/* media query for mobile devices */
+@media (min-width:320px) and (max-width: 480px){
+    .admin-main-section{
+        width: 100%;
+        padding: 0.3rem;
+        margin-top: 1rem;
+    }
+
+    .total-container{
+        padding: 0.8rem;
+        display: block;
+    }
+
+    .admin-order-wrapper{
+        overflow-x: scroll;
+    }
+
+  .mobile-span{
+    display: none;
+  }
+
+  .admin-statistic-container{
+    min-height: 97vh;
+  }
+
+  .chart-container{
+    display: block;
+  }
+
+  .chart-wrapper-bar, .chart-wrapper-pie{
+    width: 100%;
+    height: 40vh;
+  }
+
+  /* .table-container{
+    overflow-x: scroll;
+  } */
+
+  .table-container td{
+    padding: 1rem 1rem;
+  }
+}
+
+/* media query for ipads and Tablets */
+@media (min-width:481px) and (max-width: 834px){
+    .admin-main-section{
+        width: 100%;
+        padding: 2rem;
+        margin-top: 1rem;
+    }
+}
+
+@media(max-width: 768px){
+    .admin-main-section{
+        width: 71%;
+    }
+}
+
+
+
+

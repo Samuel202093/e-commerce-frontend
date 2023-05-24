@@ -1,0 +1,50 @@
+.menu-container{
+    position: fixed;
+    top: 9%;
+    left: 2.3%;
+    min-width: 15%;
+    min-height: 20%;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    z-index: 1000;
+    border-radius: 8px;
+}
+
+.link-container{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1.5rem;
+}
+
+.sidemenu-link{
+    text-decoration: none;
+    color: black;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.sidemenu-icon{
+    font-size: 1.5rem;
+    font-weight: 700;
+    transform: translate(0px, 7px);
+    color: #315039;
+}
+
+/* media query for small devices */
+@media (min-width:320px) and (max-width: 480px){
+    .menu-container{
+        top: 10%;
+        left: 0%;
+        min-height: 10%;
+    }
+}
+
+/* media query for ipads and Tablets */
+@media (min-width:481px) and (max-width: 768px){
+    .menu-container{
+        top: 3%;
+        left: 1%;
+        min-height: 10%;
+    }
+}

@@ -1,0 +1,166 @@
+.card-section{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.card-heading{
+    margin: 0 auto;
+}
+
+.card-heading h1{
+    font-family: sans-serif;
+}
+
+.card-grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.card-content-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    min-width: 30%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.card-content-container img{
+    display: flex;
+    align-self: center;
+    width: 100%;
+    height: 40vh;
+    border-radius: 8px;
+}
+
+.card-content-container h3{
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+.readmore-link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.readmore-span{
+    color: #2BC46C;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.card-content-container span{
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.card-content-container p{
+    font-size: 0.9rem;
+    font-family: sans-serif;
+}
+
+.card-content-container button{
+    display: flex;
+    align-self: flex-start;
+    padding: 0.5rem 2rem;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    border: none;
+    background: #f02d34;
+    color: white;
+    cursor: pointer;
+}
+
+@media (min-width:320px) and (max-width: 480px){
+
+    .card-grid-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.2rem;
+    }
+    
+    .card-content-container{
+        gap: 0.5rem;
+        min-width: 100%;
+        padding: 0.2rem;
+    }
+    
+    .card-content-container img{
+        width: 100%;
+        height: 25vh;
+    }
+    
+    .card-content-container h3{
+        font-size: 1rem;
+    }
+    
+    .card-content-container span{
+        font-size: 1rem;
+        font-weight: 700;
+        font-family: sans-serif;
+    }
+    
+    .card-content-container p{
+        font-size: 0.8rem;
+        font-family: sans-serif;
+    }
+    
+    .card-content-container button{
+        display: flex;
+        align-self: center;
+        padding: 0.7rem 2rem;
+        font-size: 0.8rem;
+       
+    }
+}
+
+
+/* media for ipad and tablets */
+@media (min-width:481px) and (max-width: 768px){
+
+    .card-grid-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .card-heading h1{
+        font-size: 2rem;
+    }
+
+    .card-content-container{
+        gap: 1rem;
+        min-width: 100%;
+        padding: 0.5rem;
+    }
+    
+    .card-content-container img{
+       
+        height: 25vh;
+    }
+    
+    .card-content-container h3{
+        font-size: 1.8rem;
+    }
+    
+    .card-content-container span{
+        font-size: 1.6rem;
+        font-weight: 800;
+    }
+    
+    .card-content-container p{
+        font-size: 1.7rem;
+    }
+    
+    .card-content-container button{
+        padding: 1.2rem 2rem;
+        font-size: 1.5rem;  
+    }
+}

@@ -1,0 +1,45 @@
+.mobile-nav{
+    width: 55%;
+    min-height: 60vh;
+    border-radius: 5px;
+    padding: 1rem;
+    position: absolute;
+    z-index: 1000;
+    background: #C9CCD3;
+    background-image: linear-gradient(-180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
+    background-blend-mode: lighten;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.mobile-link{
+    font-size: 1.2rem;
+    padding-left: 2rem;
+    text-decoration: none;
+    font-weight: 600;
+    color: inherit;
+}
+
+.login-wrapper{
+    margin-top: 100px;
+}
+
+.mobile-icon{
+    font-size: 1.5rem;
+    position: absolute;
+    transform: translate(0px, -4px);  
+}
+
+.btn-wrapper button{
+    font-size: 1.2rem;
+    padding: 0.5rem 2rem;
+    font-family: sans-serif;
+    letter-spacing: 0.1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #f02d34;
+    color: #fff;
+}

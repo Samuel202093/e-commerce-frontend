@@ -1,0 +1,391 @@
+.summer-layout{
+    background-color: #f02d34;
+    border-radius: 10px;
+    display:  flex;
+    justify-content: space-between;
+    min-height: 30vh;
+    padding: 1rem;
+    margin-top: 4rem;
+}
+
+.sale-wrapper{
+    width: 40%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.summer-content, .happy-hour-smile{
+    padding: 1rem;
+}
+
+.summer-content img{
+    width: 350px;
+    height: 270px;
+    position: absolute;
+    transform: translate(220px, -200px);
+}
+
+
+.summer-content p, .happy-hour-smile p{
+    color: white;
+    font-size: 0.8rem;
+}
+
+.summer-content h3, .happy-hour-smile h3{
+    color: white;
+    font-size: 2.3rem;
+    letter-spacing: 0.4rem;
+}
+
+.sale-wrapper p{
+    color: white;
+    font-size: 0.8rem;
+}
+
+.sale-wrapper h3{
+    color: white;
+    font-size: 1.3rem;
+    letter-spacing: 0.3rem;
+}
+
+.sale-wrapper button{
+    padding: 0.3rem 1.5rem;
+    display: flex;
+    align-self: flex-start;
+    border: none;
+    border-radius: 8px;
+    color: #f02d34;
+    font-weight: 700;
+}
+
+.seller-products-heading{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.seller-products-heading h2{
+    text-align: center;
+    letter-spacing: 0.2rem;
+}
+
+.seller-products-heading p{
+    text-align: center;
+    letter-spacing: 0.2rem;
+    opacity: 0.4;
+}
+
+.seller-products{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.seller-products-card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 85%;
+    margin: 0 auto;
+    gap: 3rem;
+    
+}
+
+.seller-products-card{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    min-height: 220px;
+    min-width: 200px;
+    transition: 0.3s ease-in;
+}
+
+.seller-products-card:hover{
+    transform: scale(1.1, 1.1);
+    color: #f02d34;
+}
+
+.seller-products-card img{
+    min-width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    background: #dcdcdc;
+}
+
+.content-container{
+    padding: 0.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.seller-products-card button{
+    border: none;
+    color: white;
+    background: #f02d34;
+    padding: 0.3rem 0.8rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.seller-products-card span:hover{
+    border: none;
+    background-color: #f02d34;
+    color: white;
+    
+}
+
+.seller-products-card p, .seller-products-card h3, .happy-hour-sale p{
+    font-size: 0.8rem;
+}
+
+.happy-hour-layer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #2BC46C;
+    min-height: 40vh;
+    padding: 1.5rem;
+    border-radius: 8px;
+    width: 80%;
+    margin: 6rem auto 0;
+}
+
+.happy-hour-sale{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    color: white;
+    padding: 1rem;
+}
+
+.happy-hour-sale button{
+    padding: 0.3rem 1.5rem;
+    display: flex;
+    align-self: flex-start;
+    border: none;
+    border-radius: 8px;
+    color: #2BC46C;
+    font-weight: 700;
+}
+
+/* .happy-hour-smile{
+    position: relative;
+} */
+
+.happy-hour-smile img{
+    width: 250px;
+    height: 300px;
+    position: absolute;
+    bottom: -170%;
+    right: 54%;
+    transform: rotate(180deg);
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    .summer-layout{
+        flex-direction: column;
+        padding: 0.5rem;
+        margin-top: 2rem;
+    }
+
+    .summer-content p, .happy-hour-smile p{
+        font-size: 1.3rem;
+    }
+    
+    .summer-content h3, .happy-hour-smile h3{
+        font-size: 2.7rem;
+    }
+
+    .summer-content img{
+        width: 230px;
+        height: 230px;
+        position: absolute;
+        transform: translate(140px, -160px);
+    }
+
+    .sale-wrapper p, .happy-hour-sale p{
+        font-size: 1.1rem;
+    }
+    
+    .sale-wrapper h3, .happy-hour-sale h3{
+        color: white;
+        font-size: 1.7rem;
+        letter-spacing: 0.3rem;
+    }
+    
+    .sale-wrapper button{
+        padding: 0.6rem 1.8rem;
+    }
+
+    .sale-wrapper{
+        width: 100%;  
+    }
+
+    .seller-products-heading{
+        width: 100%;
+    }
+    .seller-products-card-wrapper{
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        margin: 0 0;
+        gap: 0.1rem;    
+    }
+
+    .seller-products-card{
+        height: 200px;
+        min-width: 100px;
+    }
+
+     .content-container{
+        width: 100%;
+     }
+
+     .title-price-container{
+        min-width: 50%;
+     }
+
+     .buy-now-container{
+        width: 40%;
+     }
+
+    .seller-products-card img{
+        width: 250px;
+        height: 180px;
+    }
+  
+    .seller-products-card button{
+        padding: 0.5rem 0.6rem;
+        font-size: 0.6rem;
+    }
+
+    .seller-products-card img{
+        width: 170px;
+        height: 150px;
+    }
+  
+    .seller-products-card span{
+    font-size: 0.7rem;    
+    }
+
+    .happy-hour-layer{
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem;
+        border-radius: 8px;
+        width: 100%;
+        margin: 2rem auto 0;
+    }
+    
+    .happy-hour-sale{
+        width: 100%;
+    }
+    
+    .happy-hour-sale button{
+        padding: 0.6rem 1.7rem;
+        font-size: 1rem;
+    }
+    
+    .happy-hour-smile img{
+        display: none;
+    }
+   
+}
+
+/* media query for ipads and Tablets */
+@media (min-width:481px) and (max-width: 768px){
+    .summer-layout{
+        width: 138vw;
+        padding: 2rem;
+    }
+
+    .summer-content p, .happy-hour-smile p, .happy-hour-sale p{
+        font-size: 1.5rem;
+    }
+    
+    .summer-content h3, .happy-hour-smile h3, .happy-hour-sale h3{
+        font-size: 3rem;
+    }
+
+    .summer-content img{
+        width: 350px;
+        height: 300px;
+        position: absolute;
+        transform: translate(200px, -190px);
+    }
+
+    .sale-wrapper p, .happy-hour-sale p{
+        font-size: 1.5rem;
+    }
+    
+    .sale-wrapper h3, .happy-hour-sale h3{
+        color: white;
+        font-size: 2.5rem;
+        letter-spacing: 0.3rem;
+    }
+    
+    .sale-wrapper button, .happy-hour-sale button{
+        padding: 1.2rem 3rem;
+        font-size: 1.5rem;
+    }
+
+    .seller-products-heading{
+        width: 100%;
+    }
+    .seller-products-card-wrapper{
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        gap: 1rem;    
+    }
+
+    .seller-products-card{
+        min-height: 250px;
+        width: 280px;
+        margin:  0 auto;
+     } 
+
+     .content-container{
+        width: 100%;
+     }
+
+     .title-price-container{
+        min-width: 50%;
+     }
+
+     .buy-now-container{
+        width: 40%;
+     }
+
+    .seller-products-card img{
+        width: 260px;
+        height: 180px;
+    }
+  
+    .seller-products-card button{
+        padding: 0.7rem 1rem;
+        font-size: 0.9rem; 
+    }
+
+    .seller-products-card p, .seller-products-card h3{
+        font-size: 1.2rem;
+    }
+
+    .happy-hour-layer{
+        padding: 2.5rem;
+        border-radius: 8px;
+        width: 100%;
+        margin: 2rem auto 0;
+    }
+    
+    .happy-hour-sale{
+        width: 50%;
+    }
+      
+    .happy-hour-smile img{
+        display: none;
+    }
+}
+
