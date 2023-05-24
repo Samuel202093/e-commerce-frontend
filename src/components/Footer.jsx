@@ -42,7 +42,9 @@ const Footer = () => {
         if (res.status === 200) {
           toast.success("Thanks for subscribing.")
           setLoading(false)
-        }
+        }else{
+          setLoading(false)
+        }   
       })
     } catch (error) {
       toast.error('Network error. Please try again!!!')
