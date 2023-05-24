@@ -46,6 +46,7 @@ const Footer = () => {
       })
     } catch (error) {
       toast.error('Network error. Please try again!!!')
+      setLoading(false)
     }
   
   }
