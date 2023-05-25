@@ -33,7 +33,7 @@ const Footer = () => {
       await axios({
         method: "post",
         url:`${url}/customer/subscribe`,
-        data: email,
+        data: JSON.stringify({email:email})
   
         headers: {
           "Content-Type": "application/json"
@@ -42,7 +42,12 @@ const Footer = () => {
         if (res.status === 200) {
           toast.success("Thanks for subscribing.")
           setLoading(false)
-        }else{
+        }
+        if(res.status === 203){
+          toast.info("Already subscribed to our Newsletter")
+          setLoading(false)
+        }
+        else{
           setLoading(false)
         }   
       })
